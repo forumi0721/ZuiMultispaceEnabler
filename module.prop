@@ -1,0 +1,7 @@
+id=stonecold-zuimultispaceenabler
+name=ZuiMultispaceEnabler
+version=v1.0.0
+versionCode=100
+author=StoneCold
+description=A Magisk/APatch module that enables the PRC feature in Zui ROW ROM to use the Multiple Space functionality.
+updateJson=https://raw.githubusercontent.com/forumi0721/ZuiMultispaceEnabler/latest/update.json
