@@ -2,7 +2,7 @@
 ui_print "==> Device Compatibility Check"
 #fingerprint=$(getprop ro.build.fingerprint)
 #if [ "${fingerprint}" != "Lenovo/TB320FC/TB320FC:13/TKQ1.221114.001/ZUI_15.0.240_2404111037_ROW:user/release-keys" ]; then
-#	ui_print "이 모듈은 Legion Tab (Lenovo Legion Y700 2세대) 240 버전만 지원합니다. 다른 버전은 지원되지 않습니다."
+#    ui_print "이 모듈은 Legion Tab (Lenovo Legion Y700 2세대) 240 버전만 지원합니다. 다른 버전은 지원되지 않습니다."
 #    ui_print "This module only supports Legion Tab (Lenovo Legion Y700 2023 version 240. Other versions are not supported."
 #    abort "Installation aborted due to incompatible device."
 #fi
@@ -111,10 +111,10 @@ if [ ! -z "${multiple_space_choice}" ]; then
         ui_print "Activating Multiple Space..."
         ui_print " - system.prop"
         cat $MODPATH/common/files/stonecold-multiplespace/system.prop >> $MODPATH/system.prop
-        #mkdir -p ${product_path}/overlay
-		#ui_print " - ZuiSettingsMultipleSpace.apk"
-		#cp -a $MODPATH/common/files/stonecold-multiplespace/ZuiSettingsMultipleSpace.apk ${product_path}/overlay/
-        #ui_print "Multiple Space activation complete."
+        mkdir -p ${product_path}/overlay
+        ui_print " - ZuiSettingsMultipleSpace.apk"
+        cp -a $MODPATH/common/files/stonecold-multiplespace/ZuiSettingsMultipleSpace.apk ${product_path}/overlay/
+        ui_print "Multiple Space activation complete."
     else
         ui_print "Multiple Space activation skipped."
     fi
